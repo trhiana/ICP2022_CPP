@@ -21,15 +21,3 @@
 //    }
 //}
 //
-//list<string> Flights::split(string line, string del = " ") {
-//    list<string> lines;
-//    string text;
-//    int start, end = -1*del.size();
-//    do {
-//        start = end + del.size();
-//        end = line.find(del, start);
-//        text = line.substr(start, end - start);
-//        lines.push_back(text);
-//        return lines;
-//    } while (end != -1);
-//}
