@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "ICP2022_CPP"
+			"path" : "ICP2022_CPP.exe"
+		},
+		{
+			"path" : "ICP2022_CPP.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -71,12 +74,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "ICP2022_CPP",
-	"nameOnDisk" : "ICP2022_CPP",
+	"nameOnDisk" : "ICP2022_CPP.exe",
 	"paths" : 
 	{
 		"build" : ".",

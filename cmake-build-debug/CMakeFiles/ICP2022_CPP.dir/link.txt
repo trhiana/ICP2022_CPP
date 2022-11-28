@@ -1,0 +1,3 @@
+C:\Users\trhia\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\ICP2022_CPP.dir/objects.a
+C:\Users\trhia\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\ar.exe qc CMakeFiles\ICP2022_CPP.dir/objects.a @CMakeFiles\ICP2022_CPP.dir\objects1.rsp
+C:\Users\trhia\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\mingw\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\ICP2022_CPP.dir/objects.a -Wl,--no-whole-archive -o ICP2022_CPP.exe -Wl,--out-implib,libICP2022_CPP.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ICP2022_CPP.dir\linklibs.rsp

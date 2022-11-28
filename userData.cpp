@@ -27,11 +27,11 @@ void Flights::userInput() {
 
 list<string[]> Flights::readFile() {
     string location;
-    list<string> data;
+    list<list<string>> data;
     try {
         ifstream file("travel_input.txt");
         while (getline(file, location)) {
-
+            data.push_back(split(location, ","));
         }
 
         if (sizeof(inputFile) == 0) {
