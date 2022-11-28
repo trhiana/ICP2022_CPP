@@ -1,7 +1,3 @@
-//
-// Created by trhiana on 28/11/22.
-//
-
 #ifndef ICP2022_CPP_MAIN_H
 #define ICP2022_CPP_MAIN_H
 
@@ -13,9 +9,9 @@ class Flights {
 public:
     // userData.cpp
     void readFile();
-    void userInput();
-    void arrivalAirportCode();
-    void departureAirportCode();
+    static void userInput();
+    string arrivalAirportCode();
+    string departureAirportCode();
 
     // airports.cpp
     void airportFile();
