@@ -25,7 +25,8 @@ void Flights::userInput() {
     }
 }
 
+list<string[]> Flights::readFile() {}
 
 string Flights::departureAirportCode() {
-    
+
 }

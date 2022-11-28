@@ -8,13 +8,13 @@ using namespace std;
 class Flights {
 public:
     // userData.cpp
-    void readFile();
+    list<string[]> readFile();
     static void userInput();
     string arrivalAirportCode();
     string departureAirportCode();
 
     // airports.cpp
-    void airportFile();
+    map<list<string>, string> airportFile();
     list<string> split(string, string);
 
 private:
