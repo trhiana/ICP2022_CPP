@@ -9,9 +9,9 @@ using namespace std;
 class Flights {
 public:
     // userData.cpp
-    vector<vector<string>>readFile();
-    string arrivalAirportCode();
-    string departureAirportCode();
+    void readFile();
+    void arrivalAirportCode();
+    void departureAirportCode();
 
     // airports.cpp
     void airportFile();

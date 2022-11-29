@@ -5,7 +5,7 @@
 
 using namespace std;
 
-vector<vector<string>> Flights::readFile() {
+void Flights::readFile() {
     string line;
     try {
         ifstream file("travel_input.txt");
