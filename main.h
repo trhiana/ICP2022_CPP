@@ -3,13 +3,13 @@
 
 #include <vector>
 #include "map"
-#include "list"
+#include "exceptions.h"
 using namespace std;
 
 class Flights {
 public:
     // userData.cpp
-    void readFile();
+    void readFile() throw(FileIOException);
     void arrivalAirportCode();
     void departureAirportCode();
 

@@ -2,10 +2,14 @@
 #include "fstream"
 #include "main.h"
 #include "vector"
+#include "exceptions.h"
 
 using namespace std;
 
-void Flights::readFile() {
+/**
+ * Reading the user / traveller information from travel_input.txt
+ */
+void Flights::readFile() throw(FileIOException) {
     string line;
     try {
         ifstream file("travel_input.txt");
@@ -17,13 +21,16 @@ void Flights::readFile() {
             cout << "File is empty";
         }
         file.close();
-    } catch (...) {
-        cout << "'travel_inputs.txt' does not exist.";
+    } catch (FileIOException) {
+        cout << "'travel_input.txt' does not exist.";
     }
-
-    return location;
 }
 
-string Flights::departureAirportCode() {
-
+/**
+ * Provides the departure airport code from the airports vector.
+ */
+void Flights::departureAirportCode() {
+    for (int i = 0; i < airports.size(); ++i) {
+        if (location[0][0] == airports[i][0])
+    }
 }

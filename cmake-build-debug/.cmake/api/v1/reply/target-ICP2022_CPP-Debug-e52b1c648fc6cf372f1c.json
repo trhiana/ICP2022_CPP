@@ -98,7 +98,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				5
 			]
 		}
 	],
@@ -132,6 +133,11 @@
 			"compileGroupIndex" : 0,
 			"path" : "userData.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "exceptions.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
