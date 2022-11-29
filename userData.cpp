@@ -49,3 +49,4 @@ void Flights::departureAirportCode() throw(IndexOutOfRangeException){
         cout << "The index is out of range\n";
     }
 }
+
