@@ -9,9 +9,10 @@ This is the second individual project for CS313 Intermediate Computer Programmin
     - Methods in C++
     - Error handling
 
-## Technologies used:
+## Technologies used and environment:
     - C++
-    - CLion
+    - CLion 22.2
+    - Ubuntu 22.04
 
 ## How to run
     1. Edit the "travel_input.txt" file. 
