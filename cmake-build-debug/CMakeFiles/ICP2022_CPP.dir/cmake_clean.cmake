@@ -1,16 +1,14 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ICP2022_CPP.dir/airports.cpp.obj"
-  "CMakeFiles/ICP2022_CPP.dir/airports.cpp.obj.d"
-  "CMakeFiles/ICP2022_CPP.dir/main.cpp.obj"
-  "CMakeFiles/ICP2022_CPP.dir/main.cpp.obj.d"
-  "CMakeFiles/ICP2022_CPP.dir/routes.cpp.obj"
-  "CMakeFiles/ICP2022_CPP.dir/routes.cpp.obj.d"
-  "CMakeFiles/ICP2022_CPP.dir/userData.cpp.obj"
-  "CMakeFiles/ICP2022_CPP.dir/userData.cpp.obj.d"
-  "ICP2022_CPP.exe"
-  "ICP2022_CPP.exe.manifest"
+  "CMakeFiles/ICP2022_CPP.dir/airports.cpp.o"
+  "CMakeFiles/ICP2022_CPP.dir/airports.cpp.o.d"
+  "CMakeFiles/ICP2022_CPP.dir/main.cpp.o"
+  "CMakeFiles/ICP2022_CPP.dir/main.cpp.o.d"
+  "CMakeFiles/ICP2022_CPP.dir/routes.cpp.o"
+  "CMakeFiles/ICP2022_CPP.dir/routes.cpp.o.d"
+  "CMakeFiles/ICP2022_CPP.dir/userData.cpp.o"
+  "CMakeFiles/ICP2022_CPP.dir/userData.cpp.o.d"
+  "ICP2022_CPP"
   "ICP2022_CPP.pdb"
-  "libICP2022_CPP.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

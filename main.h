@@ -9,8 +9,7 @@ using namespace std;
 class Flights {
 public:
     // userData.cpp
-    list<string[]> readFile();
-    static void userInput();
+    vector<vector<string>>readFile();
     string arrivalAirportCode();
     string departureAirportCode();
 
@@ -21,7 +20,7 @@ public:
 private:
     map<list<string>, string> airports;
     string deptAirportCode, arrAirportCode;
-    list<string[]> inputFile;
+    vector<vector<string>> location;
 
     /**
      * Function that splits strings and saves the result into a vector.
