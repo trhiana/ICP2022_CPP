@@ -1,4 +1,4 @@
-# ICP2022_CPP
+# Individual Project 2
 
 This is the second individual project for CS313 Intermediate Computer Programming.
 
