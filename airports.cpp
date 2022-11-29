@@ -1,3 +1,7 @@
+/**
+ * @author trhiana
+ */
+
 #include "iostream"
 #include "fstream"
 #include "main.h"
@@ -5,10 +9,13 @@
 
 using namespace std;
 
+/**
+ * airportFile() reads the airport.csv file
+ * Stores the city, country, and airport code
+ */
 void Flights:: airportFile() {
     try {
         string line;
-        vector<string> loc_data;
         vector<vector<string>> data;
         ifstream file("airport.csv");
 
@@ -20,6 +27,7 @@ void Flights:: airportFile() {
         // Getting the city, country, and airport codes from the imported data
         // and add to the airports vector
         for (auto & i : data) {
+            vector<string> loc_data;
             loc_data.push_back(i[2]); // city
             loc_data.push_back(i[3]); // country
             loc_data.push_back(i[4]); // airport code

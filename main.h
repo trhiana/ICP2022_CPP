@@ -28,8 +28,10 @@ private:
     /**
      * Function that splits strings and saves the result into a vector.
      * @param line: The string to be split.
-     * @param del: The delimitor.
+     * @param del: The delimiter.
      * @return lines, a vector of the split string.
+     *
+     * Methods retrieved from geeksforgeeks.com
      */
     static vector<string> split(string line, string del = " ") {
         vector<string> lines;
