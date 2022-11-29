@@ -10,6 +10,10 @@
 
 using namespace std;
 
+/**
+ * Reads the airlines.csv file and stores airline name, IATA code, and active status.
+ * @throw: FileIOException
+ */
 void Flights::airlinesFile() throw(class FileIOException) {
     try {
         string line;

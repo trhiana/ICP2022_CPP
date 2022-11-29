@@ -13,6 +13,8 @@ int main() {
     flights.airportFile();
     flights.airlinesFile();
     flights.routesFile();
+    flights.departureAirportCode();
+    flights.arrivalAirportCode();
     flights.passenger();
     flights.toString();
 

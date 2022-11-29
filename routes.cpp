@@ -10,6 +10,11 @@
 
 using namespace std;
 
+/**
+ * Reads the airlines.csv file and stores IATA code,
+ * source airport, destination airport and number of stops for each route.
+ * @throw: FileIOException
+ */
 void Flights::routesFile() throw(class FileIOException) {
     try {
         string line;
@@ -37,6 +42,29 @@ void Flights::routesFile() throw(class FileIOException) {
     }
 }
 
+/**
+ * Calculating the flights needed based on the passenger departure and destination details
+ */
 void Flights::passenger() {
+    vector<vector<string>> airports_with_departure_code, airports_with_arrival_code;
+    for (auto & route : routes) {
+        if (deptAirportCode == route[1] && arrAirportCode == route[2]) {
+            passenger_route.push_back(route);
+            break;
+        } else if (deptAirportCode == route[1]) {
+            airports_with_departure_code.push_back(route);
+        } else if (arrAirportCode == route[2]) {
+            airports_with_arrival_code.push_back(route);
+        }
+    }
 
+    for (auto & departure : airports_with_departure_code) {
+        for (auto & destination : airports_with_arrival_code) {
+            if (departure[2] == destination[1]) {
+                passenger_route.push_back(departure);
+                passenger_route.push_back(destination);
+            }
+        }
+    }
+    
 }

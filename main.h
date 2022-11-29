@@ -28,15 +28,22 @@ public:
     void passenger();
 
     string toString() {
+        int stops_ = 0;
         for (auto & route : passenger_route) {
-            cout << "";
+            cout << route[0] + " from " + route[1] + " to " + route[2] + " " +
+            route[3] + " stops.\n";
+            int s = stoi(route[3]);
+            stops_+= s;
         }
+        cout << "Total flights: " + to_string(passenger_route.size()) +
+        "\nTotal additional stops: " + to_string(stops_) << endl;
     }
 
     /**
      * Function that splits strings and saves the result into a vector.
      * @param line: The string to be split.
-     * @param del: The delimiter.
+     * @param del:
+    int stops, flights; The delimiter.
      * @return lines, a vector of the split string.
      *
      * Methods retrieved from geeksforgeeks.com
@@ -57,7 +64,6 @@ public:
 private:
     vector<vector<string>> airports, location, airlines, routes, passenger_route;
     string deptAirportCode, arrAirportCode;
-    int stops, flights;
 };
 
 #endif //ICP2022_CPP_MAIN_H
