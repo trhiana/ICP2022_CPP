@@ -15,5 +15,6 @@ This is the secodn individual project for CS313 Intermediate Computer Programmin
 
 ## How to run
     1. Edit the "travel_input.txt" file. 
-        Add the departure location (city, country) to the first line and the arrival location (city, country) to the second line.
+        1. departure location (city, country)
+        2. arrival location (city, country) 
     2. Run main.cpp
