@@ -1,3 +1,7 @@
+/**
+ * @author trhiana
+ */
+
 #ifndef ICP2022_CPP_MAIN_H
 #define ICP2022_CPP_MAIN_H
 
@@ -10,8 +14,8 @@ class Flights {
 public:
     // userData.cpp
     void readFile() throw(FileIOException);
-    void arrivalAirportCode();
-    void departureAirportCode();
+    void arrivalAirportCode() throw(IndexOutOfRangeException);
+    void departureAirportCode() throw(IndexOutOfRangeException);
 
     // airports.cpp
     void airportFile();
