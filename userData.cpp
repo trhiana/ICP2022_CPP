@@ -32,7 +32,7 @@ void Flights::readFile() throw(FileIOException) {
 }
 
 /**
- * Provides the departure airport code from the airports vector.
+ * Getting the departure airport code from the airports vector.
  * @throw: IndexOutOfRangeException
  */
 void Flights::departureAirportCode() throw(IndexOutOfRangeException){
@@ -41,6 +41,25 @@ void Flights::departureAirportCode() throw(IndexOutOfRangeException){
             // location[0][] is always departure location
             if (location[0][0] == airport[0] && location[0][1] == airport[1]) {
                 deptAirportCode = airport[2];
+            } else {
+                cout << "The location you provided is not in our files.\n";
+            }
+        }
+    } catch (IndexOutOfRangeException) {
+        cout << "The index is out of range\n";
+    }
+}
+
+/**
+ * Getting the arrival airport code from the airports vector.
+ * @throw: IndexOutOfRangeException
+ */
+void Flights::arrivalAirportCode() throw(class IndexOutOfRangeException) {
+    try {
+        for (auto & airport : airports) {
+            // location[1][] is always arrival location
+            if (location[1][0] == airport[0] && location[1][1] == airport[1]) {
+                arrAirportCode = airport[2];
             } else {
                 cout << "The location you provided is not in our files.\n";
             }
