@@ -14,11 +14,10 @@ public:
     string departureAirportCode();
 
     // airports.cpp
-    map<list<string>, string> airportFile();
-//    list<string> split(string, string);
+    void airportFile();
 
 private:
-    map<list<string>, string> airports;
+    vector<vector<string>> airports;
     string deptAirportCode, arrAirportCode;
     vector<vector<string>> location;
 

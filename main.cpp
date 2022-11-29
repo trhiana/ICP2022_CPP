@@ -3,6 +3,6 @@
 using namespace std;
 
 int main() {
-    Flights::userInput();
+//    Flights::userInput();
     return 0;
 }

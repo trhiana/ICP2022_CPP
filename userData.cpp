@@ -25,5 +25,5 @@ vector<vector<string>> Flights::readFile() {
 }
 
 string Flights::departureAirportCode() {
-    
+
 }
