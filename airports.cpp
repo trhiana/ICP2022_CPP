@@ -4,8 +4,9 @@
 
 #include "iostream"
 #include "fstream"
-#include "main.h"
 #include "vector"
+#include "main.h"
+#include "exceptions.h"
 
 using namespace std;
 
@@ -13,7 +14,7 @@ using namespace std;
  * airportFile() reads the airport.csv file
  * Stores the city, country, and airport code
  */
-void Flights:: airportFile() {
+void Flights:: airportFile() throw(FileIOException){
     try {
         string line;
         vector<vector<string>> data;
@@ -34,7 +35,7 @@ void Flights:: airportFile() {
             airports.push_back(loc_data);
         }
         file.close();
-    } catch (...) {
+    } catch (FileIOException) {
         cout << "File does not exist!";
     }
 }

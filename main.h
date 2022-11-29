@@ -18,7 +18,7 @@ public:
     void departureAirportCode() throw(IndexOutOfRangeException);
 
     // airports.cpp
-    void airportFile();
+    void airportFile() throw(FileIOException);
 
 private:
     vector<vector<string>> airports;

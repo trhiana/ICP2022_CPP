@@ -5,7 +5,6 @@
 #include "iostream"
 #include "fstream"
 #include "main.h"
-#include "vector"
 #include "exceptions.h"
 
 using namespace std;
