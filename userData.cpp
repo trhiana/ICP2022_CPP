@@ -1,6 +1,7 @@
 #include "iostream"
 #include "fstream"
 #include "main.h"
+#include "vector"
 
 using namespace std;
 
@@ -27,7 +28,7 @@ void Flights::userInput() {
 
 list<string[]> Flights::readFile() {
     string location;
-    list<list<string>> data;
+    vector<vector<string>> data;
     try {
         ifstream file("travel_input.txt");
         while (getline(file, location)) {

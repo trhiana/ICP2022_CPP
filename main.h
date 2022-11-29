@@ -1,6 +1,7 @@
 #ifndef ICP2022_CPP_MAIN_H
 #define ICP2022_CPP_MAIN_H
 
+#include <vector>
 #include "map"
 #include "list"
 using namespace std;
@@ -22,8 +23,14 @@ private:
     string deptAirportCode, arrAirportCode;
     list<string[]> inputFile;
 
-    static list<string> split(string line, string del = " ") {
-        list<string> lines;
+    /**
+     * Function that splits strings and saves the result into a vector.
+     * @param line: The string to be split.
+     * @param del: The delimitor.
+     * @return lines, a vector of the split string.
+     */
+    static vector<string> split(string line, string del = " ") {
+        vector<string> lines;
         string text;
         int start, end = -1*del.size();
         do {
