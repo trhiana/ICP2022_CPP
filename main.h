@@ -20,10 +20,18 @@ public:
     // airports.cpp
     void airportFile() throw(FileIOException);
 
-private:
-    vector<vector<string>> airports;
-    string deptAirportCode, arrAirportCode;
-    vector<vector<string>> location;
+    //airlines.cpp
+    void airlinesFile() throw(FileIOException);
+
+    //routes.cpp
+    void routesFile() throw(FileIOException);
+    void passenger();
+
+    string toString() {
+        for (auto & route : passenger_route) {
+            cout << "";
+        }
+    }
 
     /**
      * Function that splits strings and saves the result into a vector.
@@ -45,6 +53,11 @@ private:
             return lines;
         } while (end != -1);
     }
+
+private:
+    vector<vector<string>> airports, location, airlines, routes, passenger_route;
+    string deptAirportCode, arrAirportCode;
+    int stops, flights;
 };
 
 #endif //ICP2022_CPP_MAIN_H

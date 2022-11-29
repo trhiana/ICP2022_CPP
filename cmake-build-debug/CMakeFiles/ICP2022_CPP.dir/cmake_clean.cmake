@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ICP2022_CPP.dir/airlines.cpp.o"
+  "CMakeFiles/ICP2022_CPP.dir/airlines.cpp.o.d"
   "CMakeFiles/ICP2022_CPP.dir/airports.cpp.o"
   "CMakeFiles/ICP2022_CPP.dir/airports.cpp.o.d"
   "CMakeFiles/ICP2022_CPP.dir/main.cpp.o"

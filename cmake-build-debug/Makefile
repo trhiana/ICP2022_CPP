@@ -129,6 +129,30 @@ ICP2022_CPP/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ICP2022_CPP.dir/build.make CMakeFiles/ICP2022_CPP.dir/build
 .PHONY : ICP2022_CPP/fast
 
+airlines.o: airlines.cpp.o
+.PHONY : airlines.o
+
+# target to build an object file
+airlines.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ICP2022_CPP.dir/build.make CMakeFiles/ICP2022_CPP.dir/airlines.cpp.o
+.PHONY : airlines.cpp.o
+
+airlines.i: airlines.cpp.i
+.PHONY : airlines.i
+
+# target to preprocess a source file
+airlines.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ICP2022_CPP.dir/build.make CMakeFiles/ICP2022_CPP.dir/airlines.cpp.i
+.PHONY : airlines.cpp.i
+
+airlines.s: airlines.cpp.s
+.PHONY : airlines.s
+
+# target to generate assembly for a file
+airlines.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ICP2022_CPP.dir/build.make CMakeFiles/ICP2022_CPP.dir/airlines.cpp.s
+.PHONY : airlines.cpp.s
+
 airports.o: airports.cpp.o
 .PHONY : airports.o
 
@@ -234,6 +258,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ICP2022_CPP"
+	@echo "... airlines.o"
+	@echo "... airlines.i"
+	@echo "... airlines.s"
 	@echo "... airports.o"
 	@echo "... airports.i"
 	@echo "... airports.s"

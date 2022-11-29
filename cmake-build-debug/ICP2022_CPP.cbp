@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/media/trhiana/Ashesi/CS/313/Fall 2022/Assignments/Indv. Proj. 2/C++ Project/ICP2022_CPP/airlines.cpp">
+			<Option target="ICP2022_CPP"/>
+		</Unit>
 		<Unit filename="/media/trhiana/Ashesi/CS/313/Fall 2022/Assignments/Indv. Proj. 2/C++ Project/ICP2022_CPP/airports.cpp">
 			<Option target="ICP2022_CPP"/>
 		</Unit>
